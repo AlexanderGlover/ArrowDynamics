@@ -11,9 +11,6 @@ Engine::Engine()
 	
 	mBackgroundTexture.loadFromFile("background.jpg");
 	mBackgroundSprite.setTexture(mBackgroundTexture);
-
-	mSecondBackgroundTexture.loadFromFile("secondarybackground.png");
-	mSecondBackgroundSprite.setTexture(mSecondBackgroundTexture);
 }
 
 void Engine::Start()
