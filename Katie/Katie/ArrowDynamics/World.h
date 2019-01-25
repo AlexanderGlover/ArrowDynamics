@@ -21,9 +21,9 @@ private:
 
 	sf::RenderWindow&					mWindow;
 	sf::View							mWorldView;
-	TextureHolder						mTextures;
-	SceneNode							mSceneGraph;
-	std::array<SceneNode*, LayerCount>	mSceneLayer;
+	//TextureHolder						mTextures;
+	//SceneNode							mSceneGraph;
+	//std::array<SceneNode*, LayerCount>	mSceneLayer;
 
 	sf::FloatRect	mWorldBounds;
 	sf::Vector2f	mSpawnPosition;

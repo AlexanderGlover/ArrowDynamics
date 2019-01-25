@@ -2,12 +2,13 @@
 
 Game::Game()
 {
-	RegisterStates();
+	mStateStack = new StateStack();
+	//RegisterStates();
 }
 
 void Game::RegisterStates()
 {
-	mStateStack.RegisterState<TitleState>(States::Title);
+	//mStateStack.RegisterState<TitleState>(States::Title);
 }
 
 bool Game::Update(sf::Time dt)

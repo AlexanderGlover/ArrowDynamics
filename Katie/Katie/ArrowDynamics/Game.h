@@ -11,5 +11,5 @@ public:
 protected:
 private:
 	void RegisterStates();
-	StateStack mStateStack;
+	StateStack* mStateStack;
 };
