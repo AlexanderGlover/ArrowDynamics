@@ -13,33 +13,126 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\ArrowDynamics">
+      <UniqueIdentifier>{81e38411-3a23-4c01-8034-65cae723e87b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ArrowDynamics">
+      <UniqueIdentifier>{62ff2e5b-9898-4eb1-9a7d-aa5aef01f405}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Katie">
+      <UniqueIdentifier>{68b8c4c0-b743-4590-8ab2-209a654a9794}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Katie">
+      <UniqueIdentifier>{42026671-8412-4b1a-9cab-30d09be6814d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pch.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="ArrowDynamics\Game.h">
+      <Filter>Header Files\ArrowDynamics</Filter>
     </ClInclude>
-    <ClInclude Include="Engine.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Katie\CommandQueue.h">
+      <Filter>Header Files\Katie</Filter>
+    </ClInclude>
+    <ClInclude Include="Katie\Context.h">
+      <Filter>Header Files\Katie</Filter>
+    </ClInclude>
+    <ClInclude Include="Katie\Engine.h">
+      <Filter>Header Files\Katie</Filter>
+    </ClInclude>
+    <ClInclude Include="Katie\Object.h">
+      <Filter>Header Files\Katie</Filter>
+    </ClInclude>
+    <ClInclude Include="Katie\Player.h">
+      <Filter>Header Files\Katie</Filter>
+    </ClInclude>
+    <ClInclude Include="Katie\ResourceHolder.h">
+      <Filter>Header Files\Katie</Filter>
+    </ClInclude>
+    <ClInclude Include="Katie\State.h">
+      <Filter>Header Files\Katie</Filter>
+    </ClInclude>
+    <ClInclude Include="Katie\StateIdentifiers.h">
+      <Filter>Header Files\Katie</Filter>
+    </ClInclude>
+    <ClInclude Include="Katie\StateStack.h">
+      <Filter>Header Files\Katie</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrowDynamics\GameState.h">
+      <Filter>Header Files\ArrowDynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrowDynamics\World.h">
+      <Filter>Header Files\ArrowDynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="Katie\Entity.h">
+      <Filter>Header Files\Katie</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrowDynamics\Avatar.h">
+      <Filter>Header Files\ArrowDynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="Katie\SceneNode.h">
+      <Filter>Header Files\Katie</Filter>
+    </ClInclude>
+    <ClInclude Include="Katie\FOREACH.h">
+      <Filter>Header Files\Katie</Filter>
+    </ClInclude>
+    <ClInclude Include="Katie\SpriteNode.h">
+      <Filter>Header Files\Katie</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pch.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Draw.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Engine.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Input.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="ArrowDynamics\Game.cpp">
+      <Filter>Source Files\ArrowDynamics</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Update.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Katie\CommandQueue.cpp">
+      <Filter>Source Files\Katie</Filter>
+    </ClCompile>
+    <ClCompile Include="Katie\Context.cpp">
+      <Filter>Source Files\Katie</Filter>
+    </ClCompile>
+    <ClCompile Include="Katie\Draw.cpp">
+      <Filter>Source Files\Katie</Filter>
+    </ClCompile>
+    <ClCompile Include="Katie\Engine.cpp">
+      <Filter>Source Files\Katie</Filter>
+    </ClCompile>
+    <ClCompile Include="Katie\Input.cpp">
+      <Filter>Source Files\Katie</Filter>
+    </ClCompile>
+    <ClCompile Include="Katie\Object.cpp">
+      <Filter>Source Files\Katie</Filter>
+    </ClCompile>
+    <ClCompile Include="Katie\Player.cpp">
+      <Filter>Source Files\Katie</Filter>
+    </ClCompile>
+    <ClCompile Include="Katie\State.cpp">
+      <Filter>Source Files\Katie</Filter>
+    </ClCompile>
+    <ClCompile Include="Katie\StateStack.cpp">
+      <Filter>Source Files\Katie</Filter>
+    </ClCompile>
+    <ClCompile Include="Katie\Update.cpp">
+      <Filter>Source Files\Katie</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrowDynamics\GameState.cpp">
+      <Filter>Source Files\ArrowDynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrowDynamics\World.cpp">
+      <Filter>Source Files\ArrowDynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="Katie\Entity.cpp">
+      <Filter>Source Files\Katie</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrowDynamics\Avatar.cpp">
+      <Filter>Source Files\ArrowDynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="Katie\SceneNode.cpp">
+      <Filter>Source Files\Katie</Filter>
+    </ClCompile>
+    <ClCompile Include="Katie\SpriteNode.cpp">
+      <Filter>Source Files\Katie</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

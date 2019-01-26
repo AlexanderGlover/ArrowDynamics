@@ -30,7 +30,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -84,7 +84,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
@@ -156,23 +156,43 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Engine.h" />
-    <ClInclude Include="Object.h" />
-    <ClInclude Include="pch.h" />
+    <ClInclude Include="ArrowDynamics\Avatar.h" />
+    <ClInclude Include="ArrowDynamics\Game.h" />
+    <ClInclude Include="ArrowDynamics\GameState.h" />
+    <ClInclude Include="ArrowDynamics\World.h" />
+    <ClInclude Include="Katie\CommandQueue.h" />
+    <ClInclude Include="Katie\Context.h" />
+    <ClInclude Include="Katie\Engine.h" />
+    <ClInclude Include="Katie\Entity.h" />
+    <ClInclude Include="Katie\FOREACH.h" />
+    <ClInclude Include="Katie\Object.h" />
+    <ClInclude Include="Katie\Player.h" />
+    <ClInclude Include="Katie\ResourceHolder.h" />
+    <ClInclude Include="Katie\SceneNode.h" />
+    <ClInclude Include="Katie\SpriteNode.h" />
+    <ClInclude Include="Katie\State.h" />
+    <ClInclude Include="Katie\StateIdentifiers.h" />
+    <ClInclude Include="Katie\StateStack.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Draw.cpp" />
-    <ClCompile Include="Engine.cpp" />
-    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="ArrowDynamics\Avatar.cpp" />
+    <ClCompile Include="ArrowDynamics\Game.cpp" />
+    <ClCompile Include="ArrowDynamics\GameState.cpp" />
+    <ClCompile Include="ArrowDynamics\World.cpp" />
+    <ClCompile Include="Katie\CommandQueue.cpp" />
+    <ClCompile Include="Katie\Context.cpp" />
+    <ClCompile Include="Katie\Draw.cpp" />
+    <ClCompile Include="Katie\Engine.cpp" />
+    <ClCompile Include="Katie\Entity.cpp" />
+    <ClCompile Include="Katie\Input.cpp" />
+    <ClCompile Include="Katie\Object.cpp" />
+    <ClCompile Include="Katie\Player.cpp" />
+    <ClCompile Include="Katie\SceneNode.cpp" />
+    <ClCompile Include="Katie\SpriteNode.cpp" />
+    <ClCompile Include="Katie\State.cpp" />
+    <ClCompile Include="Katie\StateStack.cpp" />
+    <ClCompile Include="Katie\Update.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Object.cpp" />
-    <ClCompile Include="pch.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="Update.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
