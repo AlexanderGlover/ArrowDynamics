@@ -156,20 +156,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ArrowDynamics\Avatar.h" />
     <ClInclude Include="ArrowDynamics\Game.h" />
     <ClInclude Include="ArrowDynamics\GameState.h" />
     <ClInclude Include="ArrowDynamics\World.h" />
     <ClInclude Include="Katie\CommandQueue.h" />
     <ClInclude Include="Katie\Context.h" />
     <ClInclude Include="Katie\Engine.h" />
+    <ClInclude Include="Katie\Entity.h" />
+    <ClInclude Include="Katie\FOREACH.h" />
     <ClInclude Include="Katie\Object.h" />
     <ClInclude Include="Katie\Player.h" />
     <ClInclude Include="Katie\ResourceHolder.h" />
+    <ClInclude Include="Katie\SceneNode.h" />
+    <ClInclude Include="Katie\SpriteNode.h" />
     <ClInclude Include="Katie\State.h" />
     <ClInclude Include="Katie\StateIdentifiers.h" />
     <ClInclude Include="Katie\StateStack.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ArrowDynamics\Avatar.cpp" />
     <ClCompile Include="ArrowDynamics\Game.cpp" />
     <ClCompile Include="ArrowDynamics\GameState.cpp" />
     <ClCompile Include="ArrowDynamics\World.cpp" />
@@ -177,9 +183,12 @@
     <ClCompile Include="Katie\Context.cpp" />
     <ClCompile Include="Katie\Draw.cpp" />
     <ClCompile Include="Katie\Engine.cpp" />
+    <ClCompile Include="Katie\Entity.cpp" />
     <ClCompile Include="Katie\Input.cpp" />
     <ClCompile Include="Katie\Object.cpp" />
     <ClCompile Include="Katie\Player.cpp" />
+    <ClCompile Include="Katie\SceneNode.cpp" />
+    <ClCompile Include="Katie\SpriteNode.cpp" />
     <ClCompile Include="Katie\State.cpp" />
     <ClCompile Include="Katie\StateStack.cpp" />
     <ClCompile Include="Katie\Update.cpp" />

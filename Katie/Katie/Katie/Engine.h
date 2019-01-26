@@ -1,6 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "../ArrowDynamics/Game.h"
+#include "../ArrowDynamics/World.h"
 
 using namespace sf;
 
@@ -23,7 +24,7 @@ protected:
 	void Draw();
 private:
 	Game mGame;
-	bool mPendingClose;
-	bool mDrawSecondaryBackground;
-	bool mQPressed;
+	World* mWorld;
+
+	String mStatisticsText;
 };

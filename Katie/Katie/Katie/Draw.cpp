@@ -1,22 +1,11 @@
- #include "Engine.h"
-
-namespace Textures
-{
-	enum ID { Landscape, Airplane, Missle };
-}
+#pragma once 
+#include "Engine.h"
 
 void Engine::Draw()
 {
 	mWindow.clear(Color::White);
+	mWorld->Draw();
 
-	if (mDrawSecondaryBackground)
-	{
-		mWindow.draw(mSecondBackgroundSprite);
-	}
-	else
-	{
-		mWindow.draw(mBackgroundSprite);
-	}
-	
+	mWindow.setView(mWindow.getDefaultView());
 	mWindow.display();
 }

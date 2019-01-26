@@ -1,5 +1,4 @@
 #pragma once
- 
 
 #include <SFML/Window.hpp>
 #include "StateIdentifiers.h"

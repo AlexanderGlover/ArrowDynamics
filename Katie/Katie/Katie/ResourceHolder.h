@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <map>
+#include "assert.h"
 
 template <typename Resource, typename Identifier>
 class ResourceHolder
@@ -19,7 +20,7 @@ private:
 template <typename Resource, typename Identifier>
 void ResourceHolder<Resource, Identifier>::LoadResource(Identifier id, const std::string& filename)
 {
-	std::unique_ptr<sf::Resource> resource(new Resource());
+	std::unique_ptr<Resource> resource(new Resource());
 	if (!resource->loadFromFile(filename))
 	{
 		throw std::runtime_error("ResourceHolder::LoadResource - Failed to load " + filename);
@@ -50,7 +51,7 @@ template <typename Resource, typename Identifier>
 Resource& ResourceHolder<Resource, Identifier>::GetResource(Identifier id)
 {
 	auto found = mResourceMap.find(id);
-	assert(found != mResourceMap.end);
+	assert(found != mResourceMap.end());
 	return *found->second;
 }
 
@@ -58,6 +59,6 @@ template <typename Resource, typename Identifier>
 const Resource& ResourceHolder<Resource, Identifier>::GetResource(Identifier id) const
 {
 	auto found = mResourceMap.find(id);
-	assert(found != mResourceMap.end);
+	assert(found != mResourceMap.end());
 	return *found->second;
 }

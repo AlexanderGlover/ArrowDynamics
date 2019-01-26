@@ -63,6 +63,21 @@
     <ClInclude Include="ArrowDynamics\World.h">
       <Filter>Header Files\ArrowDynamics</Filter>
     </ClInclude>
+    <ClInclude Include="Katie\Entity.h">
+      <Filter>Header Files\Katie</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrowDynamics\Avatar.h">
+      <Filter>Header Files\ArrowDynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="Katie\SceneNode.h">
+      <Filter>Header Files\Katie</Filter>
+    </ClInclude>
+    <ClInclude Include="Katie\FOREACH.h">
+      <Filter>Header Files\Katie</Filter>
+    </ClInclude>
+    <ClInclude Include="Katie\SpriteNode.h">
+      <Filter>Header Files\Katie</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ArrowDynamics\Game.cpp">
@@ -106,6 +121,18 @@
     </ClCompile>
     <ClCompile Include="ArrowDynamics\World.cpp">
       <Filter>Source Files\ArrowDynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="Katie\Entity.cpp">
+      <Filter>Source Files\Katie</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrowDynamics\Avatar.cpp">
+      <Filter>Source Files\ArrowDynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="Katie\SceneNode.cpp">
+      <Filter>Source Files\Katie</Filter>
+    </ClCompile>
+    <ClCompile Include="Katie\SpriteNode.cpp">
+      <Filter>Source Files\Katie</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
